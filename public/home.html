@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 id="tituloheader">Cinematch <i class="fas fa-clapperboard icono-claqueta"></i></h1>
+    </header>
+
+    <main>
+        <section id="search">
+            <h2>Buscar por Título</h2>
+            <input placeholder="Escribe el título de la película" id="buscarpeli">
+            <button id="botonbuscar">Buscar <i class="fas fa-search"></i></button>
+        </section>
+
+        <section id="search2">
+            <h2>Buscar por Género</h2>
+            <input placeholder="Escribe el género de la película" id="buscargenero">
+            <button id="botonbuscar2">Buscar <i class="fas fa-search"></i></button>
+        </section>
+        <section>
+            <div id="movies-container"></div>
+        </section>
+        <section id="comment-section">
+            <h2>Agregar Comentario</h2>
+            <input placeholder="Usuario" id="usuario" type="text">
+            <input placeholder="Pelicula" id="pelicula" type="text">
+            <textarea placeholder="Comentario" id="comentario"></textarea>
+            <button id="submit-comment">Enviar Comentario</button>
+        </section>
+
+        <section id="comments">
+            <h2>Comentarios</h2>
+            <button id="show-comments">Ver Comentarios <i class="fas fa-comments"></i></button>
+            <div id="comments-container" class="hidden"></div>
+        </section>
+
+        
+    </main>
+
+    <script src="app.js"></script>
+    <script src="comentario.js"></script>
+    <script src="viewcomment.js"></script>
+</body>
+</html>
